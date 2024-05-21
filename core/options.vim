@@ -155,3 +155,6 @@ onoremap al :normal val<CR>
 
 " leave only this window (:only)
 " nnoremap <leader>o :only<CR>
+
+" Allow saving of files as sudo when I forgot to start vim using sudo.
+cmap w!! w !sudo tee > /dev/null %
