@@ -69,7 +69,7 @@ if utils.executable("clangd") then
     flags = {debounce_text_changes = 500}
   }
 else
-  vim.notify("clangd not found!", vim.log.levels.WARN, {title = "Nvim-config"})
+  -- vim.notify("clangd not found!", vim.log.levels.WARN, {title = "Nvim-config"})
 end
 
 -- set up vim-language-server
@@ -80,8 +80,8 @@ if utils.executable("vim-language-server") then
     capabilities = capabilities
   })
 else
-  vim.notify("vim-language-server not found!", vim.log.levels.WARN,
-             {title = "Nvim-config"})
+  -- vim.notify("vim-language-server not found!", vim.log.levels.WARN,
+             -- {title = "Nvim-config"})
 end
 
 -- set up bash-language-server
