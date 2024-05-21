@@ -463,7 +463,7 @@ packer.startup({
     --   end
 
     --   -- Session management plugin
-    -- use({"tonyparkerspb/vim-obsession", cmd = "Obsession"})
+    use({"tonyparkerspb/vim-obsession", cmd = "Obsession"})
 
     --   if vim.g.is_linux then
     --     use { "ojroques/vim-oscyank", cmd = { "OSCYank", "OSCYankReg" } }
